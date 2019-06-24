@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        SaS Forum
+    </title>
+    <link rel="shortcut icon" href="../Image/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/forum.css">
+</head>
+
+<body>
+
+    <Div class="container-fluid">
+        <div class="overlay">
+            <div class="row up1">
+                <div class="col-sm-12 col-md-12">
+
+
+                    <div class="col-sm-2 img logo">
+                        <a href="../SaS.html">
+                            <img src="../Image/HLogo.png" alt="logo" class="img img-rounded" width="200px"
+                                height="100px">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+
+                    </div>
+
+                    <div class="col-sm-2 text-right">
+                        <div class="audiodiv right">
+                            <img src="../Image/mute1.png" alt="mute" onclick="fmute()">
+                            <img src="../Image/unmute1.png" alt="unmute" onclick="funmute()">
+                            <audio src="../Audio/forum.mp3" autoplay="true" loop="true" id="player1"></audio>
+                        </div>
+                        <button class="btn btn-primary" onclick="functionlogin()" style="width:auto;">Login </button>
+                        <button class="btn btn-primary" onclick="functionregister()"
+                            style="width:auto;">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 border">
+                <img src="../Image/bordersh.png" style="width:100%;height:130px;">
+            </div>
+        </div>
+
+        <div>
+            <h3 style="text-shadow: 0 0 3px#009FF0;color:rgb(0, 0, 0); padding-left:15px">
+                Welcome to the forum.
+            </h3>
+        </div>
+
+        <div id="id01" class="modal1">
+            <form class="form1">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Form">&times;</span>
+                </div>
+                <h3>
+                    Already a member? Login!
+                </h3>
+                <div class="container">
+                    <label>
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <label>
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                <div class="container cancel1">
+                    <button class="btn btn-primary" type="button"
+                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw" style="color:white;">Forgot
+                        <a href="#" onclick="functionpassword()">password?</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <div id="id02" class="modal2">
+            <form class="form2">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                        title="Close Form">&times;</span>
+                </div>
+                <h3>
+                    New member? Register!
+                </h3>
+                <div class="container">
+                    <label>
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <label>
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <label>
+                        <b>Re-type password</b>
+                    </label>
+                    <input type="password" placeholder="Re-type Password" name="psw" required>
+                    <br>
+                    <label>
+                        E-mail address
+                    </label>
+                    <input type="email" placeholder="Enter email" name="mail" required>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Register</button>
+                </div>
+                <div class="container cancel1">
+                    <button class="btn btn-primary" type="button"
+                        onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="id03" class="modal3">
+            <form class="form3">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id03').style.display='none'" class="close"
+                        title="Close Form">&times;</span>
+                </div>
+                <h3>
+                    Enter your e-mail.
+                </h3>
+                <div class="container">
+                    <input type="email" placeholder="Enter email" name="mail" required>
+                </div>
+                <div class="container cancel1">
+                    <button class="btn btn-primary" type="submit" onclick="falert()" class="cancelbtn">Submit</button>
+                    <button class="btn btn-primary" type="button"
+                        onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-5 col-sm-12">
+                        <iframe id="iframe1">
+
+                        </iframe>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <textarea>
+
+                            </textarea>
+                        <button class="btn btn-primary" type="submit">Send comment</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-12 border">
+                <img src="../Image/bordersh.png" style="width:100%;height:130px;">
+            </div>
+        </div>
+    </Div>
+
+
+    <script>
+        function fmute() {
+            var a = document.getElementById("player1").muted = true;
+        }
+        function funmute() {
+            var a = document.getElementById("player1").muted = false;
+        }
+
+        function falert() {
+            var a = document.getElementById("email").value;
+            alert("Your password has been sent to email" + " " + a);
+            document.getElementById("form3").submit();
+
+        }
+
+
+        function functionpassword() {
+            document.getElementById("id03").style.display = "block";
+            document.getElementById("id01").style.display = "none";
+            document.getElementById("id02").style.display = "none";
+
+        }
+
+
+        function functionlogin() {
+            document.getElementById("id01").style.display = "block";
+            document.getElementById("id02").style.display = "none";
+            document.getElementById("id03").style.display = "none";
+
+        }
+        function functionregister() {
+            document.getElementById("id02").style.display = "block";
+            document.getElementById("id01").style.display = "none";
+            document.getElementById("id03").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

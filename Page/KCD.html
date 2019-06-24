@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Kingdome Come: Deliverance
+    </title>
+    <link rel="shortcut icon" href="../Image/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/jquery.fadeshow-0.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/KCD.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <Div class="container-fluid">
+        <div class="overlay">
+            <div class="row up1">
+                <div class="col-sm-2 img logo">
+                    <a href="../SaS.html">
+                        <img src="../Image/HLogo.png" alt="logo" class="img img-rounded" width="200px" height="100px">
+                    </a>
+                </div>
+                <div class="col-sm-8">
+
+                </div>
+                <div class="col-sm-2 text-right">
+                    <div class="audiodiv right">
+                        <img src="../Image/mute1.png" alt="mute" onclick="fmute()">
+                        <img src="../Image/unmute1.png" alt="unmute" onclick="funmute()">
+                        <audio src="../Audio/kcdm.mp3" autoplay="true" loop="true" id="player1"></audio>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+    <div class="row">
+        <div class="col-sm-12 border">
+            <img src="../Image/bordersh.png" alt="border" style="width:100%;height:130px;">
+        </div>
+    </div>
+
+   
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <div>
+                        <h3 class="ban">
+                            Pre-order it now!!!
+                            <br>
+                        </h3>
+                        <a href="https://kcd.kochmedia.com/en">
+                            <img src="../Image/kdcbanner.jpg" style="width:100%">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-7">
+                    <div>
+                        <p class="p1">
+                            Bohemia – located in the heart of Europe, the region is rich in culture, silver, and sprawling castles. The death of its
+                            beloved ruler, Emperor Charles IV, has plunged the kingdom into dark times: war, corruption,
+                            and discord are tearing this jewel of the Holy Roman Empire apart. One of Charles' sons, Wenceslas,
+                            has inherited the crown. Unlike his father, Wenceslas is a naive, self-indulgent, unambitious
+                            monarch. His half-brother and King of Hungary, Sigismund the Red Fox, senses weakness in Wenceslas.
+                            Feigning good will, Sigismund travels to Bohemia and kidnaps his half-brother. With no king on
+                            the throne, Sigismund is now free to plunder Bohemia and seize its riches. In the midst of this
+                            chaos, you're Henry, the son of a blacksmith. Your peaceful life is shattered when a mercenary
+                            raid, ordered by King Sigismund himself, burns your village to the ground. By bittersweet fortune,
+                            you are one of the few survivors of this massacre. Without a home, family, or future you end
+                            up in the service of Lord Radzig Kobyla, who is forming a resistance against the invasion. Fate
+                            drags you into this bloody conflict and shoves you into a raging civil war, where you help fight
+                            for the future of Bohemia. Redeem your past and emerge a hero!
+                        </p>
+                    </div>
+                    <div>
+                        <h3 style="text-shadow: 0 0 3px	#009FF0;
+                color: rgb(0, 0, 0);
+                text-align:left;
+                ">Gallery</h3>
+
+                        <div class="w3-content w3-display-container">
+                            <img class="mySlides" src="../Image/kcds1.jpg" style="width:100%">
+                            <img class="mySlides" src="../Image/kcds2.jpg" style="width:100%">
+                            <img class="mySlides" src="../Image/kcds3.jpg" style="width:100%">
+                            <img class="mySlides" src="../Image/kcds4.jpg" style="width:100%">
+                            <br/>
+                            <center>
+                                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="row">
+        <div class="col-sm-12 border">
+            <img src="../Image/bordersh.png" alt="border" style="width:100%;height:130px;">
+        </div>
+    </div>
+    </Div>
+    <script>
+        function fmute() {
+            var a = document.getElementById("player1").muted = true;
+        }
+        function funmute() {
+            var a = document.getElementById("player1").muted = false;
+        }
+
+
+        $(function () {
+            var body = $('body');
+            var backgrounds = new Array(
+                'url("../Image/kcd/1.jpg")',
+                'url("../Image/kcd/2.jpg")',
+                'url("../Image/kcd/3.jpg")',
+                'url("../Image/kcd/4.jpg")'
+            );
+            var current = 0;
+            function nextBackground() {
+                body.css(
+                    'background',
+                    backgrounds[current = ++current % backgrounds.length]
+                );
+                setTimeout(nextBackground, 4000);
+                body.css("background-size", "100% 100%");
+                body.css("background-repeat", "no-repeat");
+            }
+            setTimeout(nextBackground, 4000);
+            body.css('background', backgrounds[0]);
+            body.css("background-size", "100% 100%");
+            body.css("background-repeat", "no-repeat");
+
+        });
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+</body>
+
+</html>

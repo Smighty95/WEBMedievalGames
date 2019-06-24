@@ -1,0 +1,139 @@
+.up1{
+    background-color: rgba(76,81,81, 0.65);
+    background-size: 100%;
+}
+
+body{
+    background-image: url("../Image/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.right{
+    margin-top: 35px;
+}
+
+.border{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+h4{
+    text-shadow: 0 0 3px#009FF0;
+    color:rgb(0, 0, 0);
+}
+
+.form1{
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../Image/login2.jpg");
+    background-size: cover;
+    border-bottom: black solid 2px;
+}
+
+.form1 label{
+    color: rgb(255, 255, 255);
+    background-color: #009FF0;
+    padding: 2px;
+}
+
+.form1 h3{
+    text-shadow: 0 0 3px#009FF0;
+    color:rgb(0, 0, 0);
+}
+
+.cancel1{
+    margin-top: 10px;
+}
+
+.modal{
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+#id01{
+    display: none;
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    left:30%;
+    z-index: 2; 
+    cursor: pointer; 
+}
+#id02{
+    display: none;
+    position: fixed; 
+    left:30%;
+    z-index: 2; 
+    cursor: pointer;
+}
+#id03{
+    display: none;
+    position: fixed; 
+    left:30%;
+    z-index: 2; 
+    cursor: pointer;
+}
+.modal2{
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../Image/login2.jpg");
+    background-size: cover;
+    border-bottom: black solid 2px;
+}
+
+.modal3{
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../Image/password.jpg");
+    background-size: cover;
+    border: black solid 2px;
+   
+   
+}
+
+.modal3 h3{
+    color: white;
+}
+.modal2 h3{
+    text-shadow: 0 0 3px#009FF0;
+    color:rgb(0, 0, 0);
+}
+
+.modal2 label{
+    color: rgb(255, 255, 255);
+    background-color: #009FF0;
+    padding: 2px;
+}
+
+span a{
+    color: black;
+}
+
+span a:hover{
+    color:red;
+}
+
+#iframe1{
+    background-color: white;
+    height: 300px;
+}
+
+textarea{
+    height: 300px;
+    width: 100%;
+    resize: none;
+    
+}
+
+

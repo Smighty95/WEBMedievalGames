@@ -1,0 +1,50 @@
+body{
+    background-image: url("../Image/forhonorb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0;
+    background-attachment: fixed;
+    
+}
+.up1{
+    background-color: rgba(76,81,81, 0.65);
+    background-size: 100%;
+}
+.right{
+    margin-top: 35px;
+  }
+#hoverbutton{
+    background-color: #009CEB;
+    color: white;
+}
+#hoverbutton:hover{
+    color:black;
+    font-weight: bold;
+}
+.border{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    
+}  
+
+.txt {
+    color:#009FF0;
+    background-color: rgba(0, 0, 0, 0.781)
+}
+
+.txt>h3{
+    color:white;
+}
+
+#gallery{
+    
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+li>strong{
+    color:rgb(255, 255, 255);
+}
+

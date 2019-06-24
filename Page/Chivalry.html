@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            Chivalry: Medieval Warfare
+        </title>
+        <link rel="shortcut icon" href="../Image/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../CSS/chivalry.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+
+        <Div class="container-fluid">          
+          <div class="overlay">
+              <div class="row up1">
+
+              
+              <div class="col-sm-2 img logo">
+                <a href="../SaS.html">
+                <img src="../Image/HLogo.png" alt="logo" class="img img-rounded" width="200px" height="100px">
+                </a>
+              </div>
+            <div class="col-sm-8">
+
+            </div>
+            <div class="col-sm-2 text-right">
+              <div class="audiodiv right">
+                <img src="../Image/mute1.png" alt="mute" onclick="fmute()">
+                <img src="../Image/unmute1.png" alt="unmute" onclick="funmute()">
+                <audio src="../Audio/chivalry.mp3" autoplay="true" loop="true" id="player1"></audio>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+      
+
+      <div class="row">
+        <div class="col-sm-12 border">
+          <img src="../Image/bordersh.png" alt="border" style="width:100%;height:130px;">  
+        </div>
+      </div>
+
+    
+          <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <h3 class="htitle" style="text-shadow: 0 0 3px	#009FF0;color: white; text-align:left;">Trailer</h3>
+                    <iframe class="video embed-responsive-item" src="https://www.youtube.com/embed/150hKZHpgLw" height="300" allowfullscreen>
+                    </iframe>
+                    <h3 class="htitle" style="text-shadow: 0 0 3px	#009FF0;color: white;text-align:left;">Gameplay</h3>
+                    <iframe class="video embed-responsive-item" src="https://www.youtube.com/embed/aAarhmfnp40" height="300" allowfullscreen>
+                    </iframe>
+                    </div>
+                
+
+                <div class="col-md-8 col-sm-8">
+                        <h3 class="htitle">
+                            About the game
+                        </h3>
+                        <p class="ptext">
+                        Besiege castles and raid villages in Chivalry: Medieval Warfare is 
+                        a first-person slasher with a focus on multi-player. Featuring competitive online 
+                        combat that seeks to capture the experience of truly being on a medieval battlefield. 
+                        Inspired from the intensity and epicness of swordfighting movies such as 300, Gladiator
+                        and Braveheart, Chivalry: Medieval Warfare aims to bring that experience to the hands of a gamer.   
+                        The game is skill-based and controls like an FPS, but instead of guns
+                        and grenades, players are given swords, shields, maces, battleaxes and longbows. 
+                        Set in a fictional, yet gritty and realistic world, players will fight in fast
+                        paced online battles besieging castles, raiding medieval villages and fighting for
+                        glory in the arena with up to 32 players.<br/>
+                        <ul>
+                            <h5 class="htitle" style="text-align:left;">
+                            Key features:
+                            </h5>
+                            <li>Deep melee combat system provides players with a huge range of responsive combat options </li>
+                            <li>Adjust your attacks and blocks in real time with the mouse for precise and full control of the action</li>
+                            <li>Wield an arsenal of up to 60 brutal weapons ranging from broad swords and battle axes to longbows and javelins</li>
+                            <li>Dynamic objective system brings team tactics and strategy to the forefront as players batter down gates, raid villages and assassinate enemy royalty to achieve victory.</li>
+                            <li>Use a variety of siege weapons ranging from catapults, boiling oil, ballista, battering rams and more</li>
+                            <li>Vast, lush environments that transport the player to a gritty and immersive medieval world.</li>
+                            <li>Offline play options that allow players to gain familiarity with the controls and gameplay before being thrust into the action.</li>
+                        </ul>
+                        </p>
+                        <h3 style="text-shadow: 0 0 3px	#009FF0;color: white; text-align:left;">
+                           Gallery: 
+                        </h3>
+                        <div class="gal">
+                            <div class="w3-display-container mySlides img-rounded">
+                            <img src="../Image/chivalry1.jpg" alt="Chivalry" style="width:100%">
+                            </div>
+                            <div class="w3-display-container mySlides img-rounded">
+                            <img src="../Image/chivalry2.jpg" alt="Chivalry" style="width:100%">
+                            </div>
+                            <div class="w3-display-container mySlides img-rounded"> 
+                            <img src="../Image/chivalry3.png" alt="Chivalry" style="width:100%">
+                            </div>
+                            <div style="text-align:center" class="butt">
+                            <button class="w3-button w3-display-left w3-black butt" onclick="plusDivs(-1)" style="color:black">&#10094;</button>
+                            <button class="w3-button w3-display-right w3-black butt" onclick="plusDivs(1)" style="color:black">&#10095;</button>
+                            </div>
+                        </div>
+                </div>
+          </div>
+      
+      <div class="row">
+            <div class="col-sm-12 border">
+              <img src="../Image/bordersh.png" alt="border" style="width:100%;height:130px;">  
+            </div>
+          </div>
+        </Div>
+        
+    <script>
+        function fmute(){
+        var a=document.getElementById("player1").muted=true;
+        }
+        function funmute(){
+        var a=document.getElementById("player1").muted=false;
+        }
+    
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+    
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        }
+        x[slideIndex-1].style.display = "block"; 
+        }
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    SaS Gaming
+  </title>
+  <link rel="shortcut icon" href="Image/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+  <Div class="container-fluid">
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="Video/MNB.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay row up1">
+      <div class="col-md-2 col-sm-2 img logo">
+        <a href="SaS.html">
+          <img src="Image/HLogo.png" alt="logo" class="img img-rounded" width="200px" height="100px">
+        </a>
+      </div>
+
+      <div class="col-md-8 col-sm-8">
+
+      </div>
+
+      <div class="col-md-2 col-sm-2 text-right">
+        <div class="audiodiv right">
+          <img src="Image/mute1.png" alt="mute" onclick="fmute()">
+          <img src="Image/unmute1.png" alt="unmute" onclick="funmute()">
+          <audio src="Audio/audio1.wav" autoplay="true" loop="true" id="player1"></audio>
+          
+        </div>
+      </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12 border">
+      <img src="Image/bordersh.png" style="width:100%;height:130px;">
+    </div>
+  </div>
+  
+    <div class="row il">
+      <div class="col-md-12 col-sm-12">
+        <div class="col-md-3 col-sm-3">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="hoverbutton" type="button" data-toggle="dropdown">Games
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <optgroup label="RPG"> </optgroup>
+              <li>
+                <a href="Page/chivalry.html">Chivalry: Medieval Warfare</a>
+              </li>
+              <li>
+                <a href="Page/ForHonor.html">For Honor</a>
+              </li>
+              <li>
+                <a href="Page/KCD.html">Kingdom Come: Deliverance </a>
+              </li>
+              <li>
+                <a href="Page/MNB.html">Mount and Blade 1 (with expansions) & BannerLords</a>
+              </li>
+              <optgroup label="RTS"></optgroup>
+              <li>
+                <a href="Page/Medieval.html">Medieval (with expansions)</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <a href="Page/Forum.html" class="btn btn-default" id="hoverbutton">Forum</a>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="button">
+            <a href="Page/History.html" class="btn btn-default" id="hoverbutton">History</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          
+        </div>
+       
+      </div>
+    </div>
+    <div class="row txt">
+      <div class="col-md-12 col-sm-12">
+
+        <div class="col-md-9 col-sm-9 align-center ">
+          <div class="w3-display-container mySlides img-rounded">
+            <img src="Image/Chivalry.jpg" alt="Chivalry" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+              Chivalry: Medieval Warfare
+            </div>
+          </div>
+          <div class="w3-display-container mySlides img-rounded">
+            <img src="Image/forhonor.jpg" alt="for honor" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+              For Honor
+            </div>
+          </div>
+          <div class="w3-display-container mySlides img-rounded">
+            <img src="Image/KingdomCome.jpg" alt="Kingdom Come" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+              Kingdom Come: Deliverance
+            </div>
+          </div>
+          <div class="w3-display-container mySlides img-rounded">
+            <img src="Image/MountAndBlade.jpg" alt="Mount and blade" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+              Mount and blade
+            </div>
+          </div>
+          <div class="w3-display-container mySlides img-rounded">
+            <img src="Image/Medieval2.jpg" alt="Medieval 2" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+              Medieval
+            </div>
+          </div>
+
+          <div style="text-align:center">
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)" style="color:black">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)" style="color:black">&#10095;</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <div class=" h3">
+                Buy online
+              </div>
+          <a href="http://store.steampowered.com/">
+            <img class="ban" src="Image/steam.jpg" alt="steam banner" style="width:100%;height:100px">
+          </a>
+          <a href="https://www.g2a.com/lizkatz?adid=Balkans_DSA&id=79&gclid=CjwKCAiArrrQBRBbEiwAH_6sNC83dUqBOlbxmqptBy1aMVt_oFYbSvQm7XSsgiEz6ZOSd7wlsozdxhoC6r4QAvD_BwE">
+            <img class="ban" src="Image/g2a.png" alt="g2a banner" style="width:100%;height:100px">
+          </a>
+          <a href="https://www.gamersgate.com/">
+            <img class="ban" src="Image/gamers.jpg" alt="gamers banner" style="width:100%;height:100px">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center">
+        <img src="Image/PFF.png" alt="Play for free">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="col-md-4 col-sm-12 grow">
+          <a href="https://plarium.com/play/en/throne/001_top_g?plid=106797&pxl=google_search&publisherid=193147597917&placement=throne%20kingdom%20at%20war&adpartnerset=43691385058&gclid=CjwKCAiArrrQBRBbEiwAH_6sNLO7dYpKWfBsiNk4dUdunw7YybgM8hYX2FkanPOuRsuELggnxNlkFxoC2UMQAvD_BwE">
+            <img src="Image/throne.jpg" alt="Throne" style="width:100%">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-12 grow">
+          <a href="https://www.innogames.com/games/tribal-wars-2/">
+            <img src="Image/tribal.jpg" alt="Throne" style="width:100%">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-12 grow">
+          <a href="https://www.lastknights.com/">
+            <img src="Image/thelastknight.jpg" alt="The last knights" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12 border">
+      <img src="Image/bordersh.png" style="width:100%;height:130px;">
+    </div>
+  </div>
+  </Div>
+
+  <script>
+    function fmute() {
+      var a = document.getElementById("player1").muted = true;
+    }
+    function funmute() {
+      var a = document.getElementById("player1").muted = false;
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

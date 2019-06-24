@@ -1,0 +1,42 @@
+body{
+background-image: url("../Image/history.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+margin:0px;
+padding: 0;
+background-attachment: fixed;
+background-size: cover;
+}
+
+#hoverbutton{
+    background-color: #009CEB;
+    color: white;
+}
+
+#hoverbutton:hover{
+    color:black;
+    font-weight: bold;
+}
+
+.ctext{
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.htitle{
+    color: #009CEB;
+    text-align: center;
+}
+
+.ptext{
+    color: white;
+}
+
+.up1{
+    background-color: rgba(76,81,81, 0.65);
+    background-size: 100%;
+}
+    
+.right{
+    margin-top: 35px;
+}
+    
